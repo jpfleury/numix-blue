@@ -17,7 +17,7 @@
     .xfce4-panel {
         @extend %panel;
 
-        font: normal;
+        font-weight: normal;
 
         button { @extend %panelbutton; }
 

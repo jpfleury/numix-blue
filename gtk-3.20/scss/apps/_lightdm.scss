@@ -7,7 +7,7 @@
         background-color: transparent;
         background-image: none;
         color: $white;
-        font: bold;
+        font-weight: bold;
         text-shadow: 0 1px alpha($black, .5);
         -gtk-icon-shadow: 0 1px alpha($black, .5);
 
@@ -18,7 +18,7 @@
                 background-color: transparent;
                 background-image: none;
                 color: $white;
-                font: bold;
+                font-weight: bold;
                 text-shadow: 0 1px alpha($black, .5);
                 -gtk-icon-shadow: 0 1px alpha($black, .5);
 
@@ -37,7 +37,7 @@
                     border-radius: 1px;
 
                     menuitem {
-                        font: normal;
+                        font-weight: normal;
                         text-shadow: none;
                     }
                 }
@@ -123,9 +123,11 @@
 
     #user_combobox {
         color: $lightdm_fg_color;
-        font: 18px;
+        font-size: 18px;
 
-        menu { font: normal; }
+        menu {
+            font-weight: normal;
+        }
 
         arrow { color: mix($lightdm_fg_color, $lightdm_bg_color, .5); }
     }
@@ -191,5 +193,5 @@
     }
 
      /* password warning */
-    #greeter_infobar { font: bold; }
+    #greeter_infobar { font-weight: bold; }
 }
